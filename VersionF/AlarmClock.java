@@ -36,9 +36,13 @@ public class AlarmClock {
 		
 		try {
 			
-			System.out.println("InputMismatchException");
+			System.out.print("Enter hour : ");
 			Hour = sc.nextInt();
+			
+			System.out.print("Enter Minute : ");
 			Minute = sc.nextInt();
+			
+			System.out.print("Enter Second : ");
 			Second = sc.nextInt();	
 			if((Hour <0 || Hour >12) || (Minute < 0 ||  Minute > 59)|| (Second < 0 || Second > 59)) {
 				throw new MyException();				
