@@ -2,8 +2,10 @@ package VersionB;
 
 public class SnakeAlien implements Alien {
 
+private int score = 5;
+	
 	public int getScore() {
-		return 0;
+		return score;
 	};
 	
 }
