@@ -2,7 +2,7 @@ package VersionG;
 
 import java.util.Scanner;
 
-abstract class Employee {
+ abstract class Employee {
 	
 	private String EmpID, name, address;
 
@@ -16,6 +16,7 @@ abstract class Employee {
 	}
 	
 	public void Read() {
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("Enter ID : ");

@@ -47,7 +47,7 @@ public class Manager extends Employee{
 	public void Print() {
 		
 		super.Print();		
-		System.out.print("Department : "+ Department + "\nProductNo1 : " + ProductNo1 + "\nProductNo2 : " + ProductNo2 + "\nProductNo3" + ProductNo3);					
+		System.out.print("Department : "+ Department + "\nProductNo1 : " + ProductNo1 + "\nProductNo2 : " + ProductNo2 + "\nProductNo3 : " + ProductNo3);					
 	
 	}
 	
