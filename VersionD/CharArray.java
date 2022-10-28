@@ -3,7 +3,7 @@ package VersionD;
 public class CharArray {
 	
     char myCharArray[] = {'s'};   
-    char ex;
+    char lastChar;
     
     int len = 0;
     
@@ -19,11 +19,11 @@ public class CharArray {
 		
 		len = myCharArray.length;
 		
-		ex = myCharArray[len-1];
+		lastChar = myCharArray[len-1];
 		
 		myCharArray[len-1] = myCharArray[0];	
 		
-		myCharArray[0] = ex;
+		myCharArray[0] = lastChar;
 		
 		
 		return myCharArray;
