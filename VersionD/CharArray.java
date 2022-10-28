@@ -2,11 +2,10 @@ package VersionD;
 
 public class CharArray {
 	
-    char myCharArray[] = {'s'};   
+    char myCharArray[];   
     char lastChar;
     
-    int len = 0;
-    
+    int len = 0;    
 
 	CharArray (char[] myCharArray) {
 		
@@ -23,8 +22,7 @@ public class CharArray {
 		
 		myCharArray[len-1] = myCharArray[0];	
 		
-		myCharArray[0] = lastChar;
-		
+		myCharArray[0] = lastChar;		
 		
 		return myCharArray;
 		
