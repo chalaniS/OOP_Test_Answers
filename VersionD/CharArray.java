@@ -3,10 +3,9 @@ package VersionD;
 public class CharArray {
 	
     char myCharArray[] = {'s'};   
-    char reverse[] ; 
+    char ex;
     
-    
-    int j = 0;
+    int len = 0;
     
 
 	CharArray (char[] myCharArray) {
@@ -18,19 +17,22 @@ public class CharArray {
 	
 	public char[] swapFirstAndLast() {	
 		
-		reverse = new char[myCharArray.length];
+		len = myCharArray.length;
 		
-		for(int i = myCharArray.length-1 ; i >= 0; i-- ) {
-			reverse[j++] = myCharArray[i];			
-		}
+		ex = myCharArray[len-1];
 		
-		return reverse;
+		myCharArray[len-1] = myCharArray[0];	
+		
+		myCharArray[0] = ex;
+		
+		
+		return myCharArray;
 		
 	}
 	
 	public void DisplayArray() {
 		for(int i = 0; i < myCharArray.length; i++ ) {
-			System.out.print(reverse[i]);	
+			System.out.print(myCharArray[i]);	
 		}
 		
 	}
